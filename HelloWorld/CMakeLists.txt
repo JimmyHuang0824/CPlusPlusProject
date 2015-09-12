@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 2.8)
+
+PROJECT(Hello)
+
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR})
+SET(INC_FILE debug.h)
+SET(SRC_FILE HelloWorld.cpp)
+
+ADD_EXECUTABLE(HelloWorld ${SRC_FILE} ${INC_FILE})
+

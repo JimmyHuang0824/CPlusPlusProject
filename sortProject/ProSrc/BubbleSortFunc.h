@@ -9,6 +9,7 @@ class BubbleSortFunc : public SortFuncAbstra
 		BubbleSortFunc();
 		virtual ~BubbleSortFunc();
 		virtual bool sortFunc(vector<int> &vecInput);
+		virtual void printSortFuncID();
 
 };
 

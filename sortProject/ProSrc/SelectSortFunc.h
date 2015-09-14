@@ -9,6 +9,7 @@ class SelectSortFunc : public SortFuncAbstra
 		SelectSortFunc();
 		virtual ~SelectSortFunc();
 		virtual bool sortFunc(vector<int> &vecInput);
+		virtual void printSortFuncID();
 		
 };
 #endif

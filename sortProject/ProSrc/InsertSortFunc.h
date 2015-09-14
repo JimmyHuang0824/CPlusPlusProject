@@ -10,6 +10,7 @@ class InsertSortFunc : public SortFuncAbstra
 		InsertSortFunc();
 		virtual ~InsertSortFunc();
 		virtual bool sortFunc(vector<int> &vecInput);
+		virtual void printSortFuncID();
 
 };
 

@@ -35,3 +35,8 @@ bool InsertSortFunc::sortFunc(vector<int> &vecInput)
 	bRet = true;
 	return bRet;
 }
+
+void InsertSortFunc::printSortFuncID()
+{
+	cout<<"This is Insert Sort Proc...."<<endl;
+}

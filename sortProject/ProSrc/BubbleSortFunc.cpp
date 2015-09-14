@@ -46,3 +46,7 @@ bool BubbleSortFunc::sortFunc(vector<int> &vecInput)
 	return bRet;
 }
 
+void BubbleSortFunc::printSortFuncID()
+{
+	cout<<"This is Bubble Sort Proc..."<<endl;	
+}

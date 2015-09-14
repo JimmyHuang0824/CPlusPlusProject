@@ -43,3 +43,8 @@ bool SelectSortFunc::sortFunc(vector<int> &vecInput)
 	bRet = true;
 	return bRet;	
 }
+
+void SelectSortFunc::printSortFuncID()
+{
+	cout<<"This is Select Sort Proc...."<<endl;
+}

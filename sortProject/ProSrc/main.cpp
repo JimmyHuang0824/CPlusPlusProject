@@ -7,6 +7,7 @@
 #include "BubbleSortFuncFactory.h"
 #include "SelectSortFuncFactory.h"
 #include "InsertSortFuncFactory.h"
+#include "HeapSortFuncFactory.h"
 
 using namespace std;
 
@@ -20,10 +21,13 @@ int main()
 		gbDataPoolObj.setGbVecUnorderedData(vecTest);
 		//FuncAbstraFactory *pSortFactory = new BubbleSortFuncFactory();
 		//FuncAbstraFactory *pSortFactory = new SelectSortFuncFactory();
-		FuncAbstraFactory *pSortFactory = new InsertSortFuncFactory();
+		//FuncAbstraFactory *pSortFactory = new InsertSortFuncFactory();
+		FuncAbstraFactory *pSortFactory = new HeapSortFuncFactory();
 		SortFuncAbstra *pSortFuncObj = pSortFactory->createSortFuncObj();
 		if (true == pSortFuncObj->sortFunc(vecTest))
 		{
+			pSortFuncObj->printSortFuncID();
+
 			gbDataPoolObj.setGbVecOrderedData(vecTest);
 			cout<<"Unordered Data List:"<<endl<<endl;
 			gbDataPoolObj.displayUnorderedData();

@@ -9,6 +9,7 @@
 #include "InsertSortFuncFactory.h"
 #include "HeapSortFuncFactory.h"
 #include "MergeSortFuncFactory.h"
+#include "QuickSortFuncFactory.h"
 
 
 using namespace std;
@@ -18,6 +19,7 @@ int main()
 	GbDataPool &gbDataPoolObj = GbDataPool::getGbDataPool();
 	vector<int> vecTest = gbDataPoolObj.getGbVecUnorderedData();
 	RandomVectorNumCreator &randomNumCreator = RandomVectorNumCreator::getRandomVectorNumCreatorObj();
+
 	if (randomNumCreator.createRandomNum(vecTest) == true)
 	{
 		gbDataPoolObj.setGbVecUnorderedData(vecTest);
@@ -25,7 +27,8 @@ int main()
 		//FuncAbstraFactory *pSortFactory = new SelectSortFuncFactory();
 		//FuncAbstraFactory *pSortFactory = new InsertSortFuncFactory();
 		//FuncAbstraFactory *pSortFactory = new HeapSortFuncFactory();
-		FuncAbstraFactory *pSortFactory = new MergeSortFuncFactory();
+		//FuncAbstraFactory *pSortFactory = new MergeSortFuncFactory();
+		FuncAbstraFactory *pSortFactory = new QuickSortFuncFactory();
 		SortFuncAbstra *pSortFuncObj = pSortFactory->createSortFuncObj();
 		if (true == pSortFuncObj->sortFunc(vecTest))
 		{

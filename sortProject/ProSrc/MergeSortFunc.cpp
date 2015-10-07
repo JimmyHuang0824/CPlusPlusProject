@@ -21,6 +21,8 @@ bool MergeSortFunc::sortFunc(vector<int> &vecInput)
 	else
 	{
 		this->mSort(vecInput);		
+		bRet = true;
+		return bRet;
 	}
 }
 
@@ -40,6 +42,7 @@ bool MergeSortFunc::mSort(vector<int> &vecInput)
 	while (i < (int)vecInput.size())
 	{
 		this->merge(vecInput , vecTemp , i);
+		i <<= 1;
 	}
 
 	bRet = true;
@@ -48,13 +51,13 @@ bool MergeSortFunc::mSort(vector<int> &vecInput)
 
 
 void MergeSortFunc::merge(vector<int> &vecInput , vector<int> &vecOutput 
-							, int nMid);
+							, int nMid)
 {
 	int i = 0;
 	while (i <= (int)vecInput.size() - (nMid << 1))
 	{
 		this->mergeSort(vecInput , vecOutput , i 
-						, i + nMid - 1 , i + (nMid << 1) - 2 );
+						, i + nMid - 1 , i + (nMid << 1) - 1);
 		i += (nMid << 1);
 	}
 

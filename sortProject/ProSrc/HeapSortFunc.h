@@ -10,10 +10,10 @@ class HeapSortFunc : public SortFuncAbstra
 		HeapSortFunc();
 		virtual ~HeapSortFunc();
 		virtual bool sortFunc(vector<int> &vecInput);
+		virtual void printSortFuncID();
 
 	private:
 		void heapAdjust(vector<int> &vecInput , int nLow , int nHigh);
-		virtual void printSortFuncID();
 };
 
 #endif

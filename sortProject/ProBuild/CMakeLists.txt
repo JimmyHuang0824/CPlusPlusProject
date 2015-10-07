@@ -12,26 +12,30 @@ SET(INC_FACTORY ${PROJECT_SOURCE_DIR}/../ProSrc/FuncAbstraFactory.h
 				${PROJECT_SOURCE_DIR}/../ProSrc/BubbleSortFuncFactory.h
 				${PROJECT_SOURCE_DIR}/../ProSrc/SelectSortFuncFactory.h
 				${PROJECT_SOURCE_DIR}/../ProSrc/InsertSortFuncFactory.h
-				${PROJECT_SOURCE_DIR}/../ProSrc/HeapSortFuncFactory.h)
+				${PROJECT_SOURCE_DIR}/../ProSrc/HeapSortFuncFactory.h
+				${PROJECT_SOURCE_DIR}/../ProSrc/MergeSortFuncFactory.h)
 
 SET(SRC_FACTORY ${PROJECT_SOURCE_DIR}/../ProSrc/FuncAbstraFactory.cpp
 				${PROJECT_SOURCE_DIR}/../ProSrc/BubbleSortFuncFactory.cpp
 				${PROJECT_SOURCE_DIR}/../ProSrc/SelectSortFuncFactory.cpp
 				${PROJECT_SOURCE_DIR}/../ProSrc/InsertSortFuncFactory.cpp
-				${PROJECT_SOURCE_DIR}/../ProSrc/HeapSortFuncFactory.cpp)
+				${PROJECT_SOURCE_DIR}/../ProSrc/HeapSortFuncFactory.cpp
+				${PROJECT_SOURCE_DIR}/../ProSrc/MergeSortFuncFactory.cpp)
 
 ##方法类
 SET(INC_SORTFUNC ${PROJECT_SOURCE_DIR}/../ProSrc/SortFuncAbstra.h
 				 ${PROJECT_SOURCE_DIR}/../ProSrc/BubbleSortFunc.h
 		 		 ${PROJECT_SOURCE_DIR}/../ProSrc/SelectSortFunc.h
 				 ${PROJECT_SOURCE_DIR}/../ProSrc/InsertSortFunc.h
-				 ${PROJECT_SOURCE_DIR}/../ProSrc/HeapSortFunc.h)
+				 ${PROJECT_SOURCE_DIR}/../ProSrc/HeapSortFunc.h
+				 ${PROJECT_SOURCE_DIR}/../ProSrc/MergeSortFunc.h)
 
 SET(SRC_SORTFUNC ${PROJECT_SOURCE_DIR}/../ProSrc/SortFuncAbstra.cpp
 				 ${PROJECT_SOURCE_DIR}/../ProSrc/BubbleSortFunc.cpp
 		 		 ${PROJECT_SOURCE_DIR}/../ProSrc/SelectSortFunc.cpp
 				 ${PROJECT_SOURCE_DIR}/../ProSrc/InsertSortFunc.cpp
-				 ${PROJECT_SOURCE_DIR}/../ProSrc/HeapSortFunc.cpp)
+				 ${PROJECT_SOURCE_DIR}/../ProSrc/HeapSortFunc.cpp
+				 ${PROJECT_SOURCE_DIR}/../ProSrc/MergeSortFunc.cpp)
 
 ##全局数据池类
 SET(INC_MODEL ${PROJECT_SOURCE_DIR}/../ProSrc/GbDataPool.h)

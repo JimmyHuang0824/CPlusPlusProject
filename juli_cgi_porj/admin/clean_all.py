@@ -6,7 +6,7 @@
 #   Desc    :   遍历清除工程中所有build目录下的编译产物
 #
 import sys
-sys.path.append("./comm_lib")
+sys.path.append("./py_comm_lib")
 
 import os
 from dir_and_file_proc import SysDirAndFileProc
@@ -45,7 +45,4 @@ if __name__=="__main__":
         print "CleanAllMakeObj failed, iRet:%s"%iRet
 
     print "CleanAllMakeObj succ"
-
-
-
 

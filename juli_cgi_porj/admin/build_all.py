@@ -6,7 +6,7 @@
 #   Desc    :   对整个工程文件进行编译
 #
 import sys
-sys.path.append("./comm_lib")
+sys.path.append("./py_comm_lib")
 
 from dir_and_file_proc import SysDirAndFileProc
 import os

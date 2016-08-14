@@ -1,5 +1,8 @@
 #include "SelectSortFunc.h"
 
+/**
+ * @brief
+ */
 SelectSortFunc::SelectSortFunc()
 				:SortFuncAbstra()
 {

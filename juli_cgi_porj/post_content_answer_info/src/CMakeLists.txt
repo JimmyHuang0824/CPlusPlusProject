@@ -42,4 +42,4 @@ ADD_EXECUTABLE(post_content_answer.cgi ${SRC_JSON_RW}
 							${INC_PRINT_ERROR_LOG}
 							${SRC_MAIN})
 
-TARGET_LINK_LIBRARIES(post_content_answer.cgi json_linux-gcc-4.9.1_libmt mysqlclient)
+TARGET_LINK_LIBRARIES(post_content_answer.cgi json_linux-gcc-5.4.0_libmt mysqlclient)

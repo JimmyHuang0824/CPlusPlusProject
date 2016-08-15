@@ -28,4 +28,4 @@ ADD_EXECUTABLE(getcontent.cgi ${SRC_JSON_RW}
 							${INC_MYSQL_CONN_RW}
 							${SRC_MAIN})
 
-TARGET_LINK_LIBRARIES(getcontent.cgi json_linux-gcc-4.9.1_libmt mysqlclient boost_locale)
+TARGET_LINK_LIBRARIES(getcontent.cgi json_linux-gcc-5.4.0_libmt mysqlclient boost_locale)

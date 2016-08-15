@@ -42,4 +42,4 @@ ADD_EXECUTABLE(get_usr_login.cgi ${SRC_JSON_RW}
 							${INC_STRING_DEAL_UTILS}
 							${SRC_MAIN})
 
-TARGET_LINK_LIBRARIES(get_usr_login.cgi json_linux-gcc-4.9.1_libmt mysqlclient)
+TARGET_LINK_LIBRARIES(get_usr_login.cgi json_linux-gcc-5.4.0_libmt mysqlclient)

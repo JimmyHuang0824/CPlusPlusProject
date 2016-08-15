@@ -42,4 +42,4 @@ ADD_EXECUTABLE(get_content_answer.cgi ${SRC_JSON_RW}
 		${INC_PRINT_ERROR_LOG}
 		${SRC_MAIN})
 
-TARGET_LINK_LIBRARIES(get_content_answer.cgi json_linux-gcc-4.9.1_libmt mysqlclient boost_locale)
+TARGET_LINK_LIBRARIES(get_content_answer.cgi json_linux-gcc-5.4.0_libmt mysqlclient boost_locale)
